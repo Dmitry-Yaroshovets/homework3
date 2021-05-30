@@ -5,22 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>web studio</title>
+    <link rel="stylesheet" href="./css/modern-normalize.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;700&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
     <body >
         <!--header-->
-        <header class="header">
+        <header>
+            <section class="container">
             <nav class="header-nav">
-                <a href="/" class="header-logo-link">
+                <a href="./index.html" class="header-logo-link">
                      <span class="header-web-logo">Web</span><span class="header-studio-logo">Studio</span>
                 </a>
                 <ul class="header-list">
-                    <li class="header-item"><a href="" class="header-link"> <b>Студия</b> </a></li>
-                    <li class="header-item"><a href="" class="header-link"><b>Портфолио</b></a></li>
-                    <li class="header-item"><a href="" class="header-link"><b>Контакты</b></a></li>
+                    <li class="header-item"><a href="./index.html" class="header-link"> <b>Студия</b> </a></li>
+                    <li class="header-item"><a href="./portfolio.html" class="header-link"><b>Портфолио</b></a></li>
+                    <li class="header-item"><a href="#contacts" class="header-link"><b>Контакты</b></a></li>
                 </ul>
             </nav>
                 <ul class="header-mail-list">
@@ -29,14 +31,17 @@
                     <li class="header-mail-item"><a href="tel:+380961111111" class="header-mail-link">+38 096 111 11 11</a>
                     </li>
                 </ul>
+            </section>
         </header>
         <main>
             <!--main saction-->
+            
             <section class="heroy">
                 <h1 class="heroy-title">Эффективные решения<br> для вашего бизнеса</h1>
                 <button class="order-service" type="button">Заказать услугу</button>
             </section>
             <!--specifics-->
+            <section class="container">
             <section class="advantage">
                 <ul class="advantage-list">
     
@@ -72,8 +77,10 @@
                             <img src="./images/foto3.jpg" alt="функционал" width="370">
                         </li>
                 </ul>
+                </section>
             </section>
             <section class="team">
+                <section class="container">
                 <h2 class="team-title">Наша команда</h2>
                 <ul class="team-list">
                     <li class="team-item">
@@ -93,22 +100,28 @@
                     </li>
     
                     <li class="team-item">
-                        <img src="./images/foto.ul designer.jpg" alt="foto UI Designer" width="270">
+                        <img src="./images/foto.uldesigner.jpg" alt="foto UI Designer" width="270">
                         <p  class="team-name"><b>Михаил Ермаков</b></p>
                         <p class="team-profession">UI Designer</p>
                     </li>
                 </ul>
+                </section>
+            
             </section>
         </main>
-        <footer class="footer">
-                <a href="/" class="footer-logo-link"><span class="web-logo">Web</span><span class="studio-logo">Studio</span>
+        <footer id="contacts" class="footer">
+            <section class="container">
+                <a href="./index.html" class="footer-logo-link"><span class="web-logo">Web</span><span class="studio-logo">Studio</span>
                     
                 </a>
-                <address class="footer-address">г. Киев, пр-т Леси Украинки, 26</address>
+                <address>
                 <ul class="footer-list">
+                    <li class="footer-address"> г. Киев, пр-т Леси Украинки, 26</li>
                     <li class="footer-item"><a href="mailto:info@example.com" class="footer-mail-link">info@example.com</a></li>
                     <li class="footer-item"><a href="tel:+380991111111" class="footer-tel-link">+38 099 111 11 11</a></li>
                 </ul>
+                </address>
+            </section>
         </footer>
     
     </body>
