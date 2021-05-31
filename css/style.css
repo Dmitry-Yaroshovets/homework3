@@ -4,6 +4,7 @@
 /* акцент #2196f3*/
 /* основной цвет фона #F5F5F5; */
 /* вторичный цвет фона #f5f4fa*/
+/* рамка хедера #ECECEC */
 
 :root {
   --primary-text-color: #757575;
@@ -13,10 +14,18 @@
   --white-color: #ffffff;
   --hero-footer-color: #2f303a;
   --secondary-white-color: #f5f4fa;
+  --color-border:#ECECEC;
+  --card-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 h1,h2,h3,h4,p,ul{
   margin: 0;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 body {
@@ -37,9 +46,6 @@ header .container{
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-}
-   
-.header-logo-link {
 }
 .header-web-logo {
   font-family: Raleway;
@@ -118,14 +124,23 @@ header .container{
 .header-mail-link:active {
   color: var(--accent-color);
 }
+header{
+  background-color:var(--white-color);
+}
+.header{
+  border-bottom: 1px solid var(--color-border);
+}
 
 /*header end*/
 
 /* index.html*/
 /*heroy start*/
+
 .heroy {
   background: var(--hero-footer-color);
   width: 100%;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 .heroy-title {
   text-align: center;
@@ -134,7 +149,7 @@ header .container{
   line-height: 1.35;
   text-transform: uppercase;
   color: var(--white-color);
-  padding: 200px 0px 30px 0px;
+  padding-bottom: 30px;
 }
 .order-service {
   font-family: Roboto;
@@ -154,7 +169,7 @@ header .container{
   padding-bottom: 10px;
   padding-left: 32px;
   padding-right: 32px;
-  margin: 40px auto 200px ;
+  margin: auto ;
   display:block;
 }
 
@@ -211,8 +226,7 @@ header .container{
 
 .team-item {
   background: var(--white-color);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: var(--card-shadow);
   border-radius: 0px 0px 4px 4px;
 }
 .team-title {
@@ -268,16 +282,13 @@ header .container{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  padding-top: 100px;
+  padding-bottom: 56px;
 }
 .button-item {
   margin-right: 8px;
   background: var(--secondary-white-color);
   border-radius: 4px;
-}
-.button-item:active,
-.button-item:hover,
-.button-item:focus {
-  background-color: var(--accent-color);
 }
 .button-x {
   font-family: Roboto;
@@ -290,7 +301,14 @@ header .container{
   color: var(--title-text-color)
   background-color: var(--secondary-white-color);
   border-radius: 4px;
-   cursor: pointer;
+  cursor: pointer;
+  border: none;
+  padding: 6px 22px;
+}
+.button-item:active,
+.button-item:hover,
+.button-item:focus {
+  background-color: var(--accent-color);
 }
 .button-x:focus,
 .button-x:hover,
@@ -299,12 +317,20 @@ header .container{
   background: var(--accent-color);
 }
 
-.list-pic {
-  
-}
 .list-pic-one {
-  background: var(--white-color);
+padding: 0px;
+margin: 0px;
+list-style: none;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+padding-bottom: 94px;
 }
+.item-pic-one:not(:nth-last-child(-n + 3))  {
+  padding-bottom: 30px;
+  border-bottom: 1px solid var(--card-shadow);
+}
+
 .title-pic {
   font-weight: 700;
   font-size: 18px;
@@ -316,6 +342,10 @@ header .container{
   font-size: 16px;
   line-height: 1.88;
   color: var(--primary-text-color);
+}
+.card-content{
+  padding: 20px 24px;
+  background-color: var(--white-color);
 }
 /*main end*/
 /*portfolio end*/
