@@ -34,7 +34,7 @@ img {
 }
 
 body {
-  background: var(--primary-white-color);
+  background-color: var(--white-color)
   font-family: Roboto, sans-serif;
   font-style: normal;
   color: var(--primary-text-color);
@@ -182,7 +182,7 @@ header {
 
 /*advantage start*/
 .advantage {
-  background-color: var(--primary-white-color);
+  background-color: var(--white-color);
 }
 .advantage {
   padding: 94px 0 94px 0;
@@ -220,7 +220,6 @@ header {
   text-align: center;
   color: var(--title-text-color);
   margin-bottom: 50px;
-  margin-top: 94px;
 }
 .work-list {
   display: flex;
@@ -361,6 +360,8 @@ header {
 .card-content {
   padding: 20px 24px;
   background-color: var(--white-color);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 /*main end*/
 /*portfolio end*/
